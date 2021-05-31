@@ -38,8 +38,6 @@ const fetchInfo = {
             const jsonData = await fetch('https://api.covid19api.com/summary')
             const jsData = await jsonData.json();
 
-            console.log(jsData);
-
             return jsData;
         } catch(error){
             return false;
